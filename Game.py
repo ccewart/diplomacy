@@ -25,6 +25,9 @@ class Player:
 class Army:
     def __init__(self):
         self.name = 'Army'
+        
+class Map:
+    
     
     
 
