@@ -19,10 +19,11 @@ class Territory:
     ''' defines a territory which is the unit that the map consists of '''
     ''' a territory has a name and a set of adjacent territories '''
     name = None
-    adjacencies = []
+    adjacencies = None
     
     def __init__(self, name, adjacencies): # name and adjacency restrictions implemented in map.py
         self.name = name # should probably enforce name restrictions (i.e. only ww1 territory names)
+        self.adjacencies = []
         for i in adjacencies:
             self.adjacencies.append(i) # same point as above but for adjacency
         
@@ -32,11 +33,23 @@ class Territory:
     def get_name(self):
         return self.name
     
+    def get_adjacencies(self):
+        return self.adjacencies
+    
     def no_duplicate_territories(self, other):
         try:
             assert self.name != other
         except AssertionError:
             print("This territory already exists on the map")
+
+territoryList = ['Austria-Hungary', 'England', 'France', 'Germany', 'Italy', 'Russia', 'Turkey']
+
+worldMap = list()
+
+for i in range(len(territoryList)):
+    worldMap.append(Territory(territoryList[i], ['none']))
+    
+    
         
 # TODO
 # want to implement these when unit types are defined. They should be enforcing movement of certain unit types only
