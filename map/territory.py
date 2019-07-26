@@ -16,12 +16,16 @@ Created on Sat Jul 13 06:47:02 2019
 '''
 
 class Territory:
-    '''defines a territory superclass'''
-    ''' a territory is just the unit of earth. It knows nothing about its adjacent territories and only has name.'''
+    ''' defines a territory which is the unit that the map consists of '''
+    ''' a territory has a name and a set of adjacent territories '''
     name = None
+    adjacencies = None
     
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, name, adjacencies): # name and adjacency restrictions implemented in map.py
+        self.name = name # should probably enforce name restrictions (i.e. only ww1 territory names)
+        self.adjacencies = []
+        for i in adjacencies:
+            self.adjacencies.append(i) # same point as above but for adjacency
         
     def __str__(self):
         return self.name
@@ -29,31 +33,32 @@ class Territory:
     def get_name(self):
         return self.name
     
+    def get_adjacencies(self):
+        return self.adjacencies
+    
     def no_duplicate_territories(self, other):
         try:
             assert self.name != other
         except AssertionError:
             print("This territory already exists on the map")
-        
 
-class LandTerritory(Territory):
-    '''specific features of a territory that is landlocked'''
-    coasts = []
+territoryList = ['Austria-Hungary', 'England', 'France', 'Germany', 'Italy', 'Russia', 'Turkey']
+
+worldMap = list()
+
+for i in range(len(territoryList)):
+    worldMap.append(Territory(territoryList[i], ['none']))
     
-    def __init(self, name, coastal_territories):
-        super().__init__(name)
-        self.coastal_territories = coastal_territories
-        self.coasts.append(coastal_territories)
+    
         
-    
-    
-#    def check_coasts()
-    
-    
-class CoastTerritory(Territory):
-    '''specific features of a land territory that is on the coast'''
-    #TODO
-    
-class SeaTerritory(Territory):
-    '''features of a seabased territory'''
-    #TODO
+# TODO
+# want to implement these when unit types are defined. They should be enforcing movement of certain unit types only
+
+#class LandTerritory(Territory):
+#    '''specific features of a territory that is landlocked'''
+#        
+#class CoastTerritory(Territory):
+#    '''specific features of a land territory that is on the coast'''
+#    
+#class SeaTerritory(Territory):
+#    '''features of a seabased territory'''
