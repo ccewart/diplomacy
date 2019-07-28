@@ -1,0 +1,79 @@
+Territory,Subtype,Adjacent,Country Owner,SupplyCentre
+North Atlantic Ocean,Sea,"Norwegian Sea, Clyde, Liverpool, Irish Sea, Mid-Atlantic Ocean",Neutral,n
+Norwegian Sea,Sea,"North Atlantic Ocean, Clyde, Edinburgh, North Sea, Norway Barents Sea",Neutral,n
+Norway,Coast,"Norwegian Sea, North Sea, Skagerrak, Sweden, Finland, Barents Sea, North Coast St Petersburg",Neutral,y
+Sweden,Coast,"Norway, Skagerrak, Denmark, Baltic Sea, Gulf of Bothnia, Finland",Neutral,y
+Barents Sea,Sea,"Norwegian Sea, Norway, North Coast St. Petersburg",Neutral,n
+Finland,Coast,"Norway, Sweden, Gulf of Bothnia, South Coast St Petersburg, North Coast St Petersburg",Russia,n
+North Coast St Petersburg,Coast,"Barents Sea, Norway, Finland, South Coast St Petersburg",Russia,n
+South Coast St Petersburg,Coast,"Finland, Livonia, Gulf of Bothnia, Moscow, North Coast St Petersburg",Russia,y
+Gulf of Bothnia,Sea,"Sweden, Finland, South Coast St Petersburg, Livonia, Baltic Sea",Neutral,n
+Livonia,Coast,"Gulf of Bothnia, South Coast St Petersburg, Moscow, Warsaw, Prussia, Baltic Sea",Russia,n
+Moscow,Land,"South Coast St Petersburg, Livonia, Warsaw, Ukraine, Sevastopol",Russia,y
+Sevastopol,Coast,"Moscow, Ukraine, Rumania, Black Sea, Armenia",Russia,y
+Armenia,Coast,"Sevastopol, Black Sea, Ankara, Smyrna, Syria",Turkey,n
+Ankara,Coast,"Armenia, Black Sea, Constantinople, Smyrna",Turkey,y
+Black Sea,Sea,"Sevastopol, Armenia, Ankara, Constantinople, East Coast Bulgaria, Rumania",Neutral,n
+Syria,Coast,"Eastern Mediterranean, Smyrna, Armenia",Turkey,n
+Smyrna,Coast,"Armenia, Syria, Eastern Mediterranean, Aegean Sea, Constantinople, Ankara",Turkey,y
+Eastern Mediterranean,Sea,"Syria, Smyrna, Aegean Sea, Ionian Sea",Neutral,n
+Constantinople,Coast,"Aegean Sea, Smyrna, Ankara, Black Sea, South Coast Bulgaria, East Coat Bulgaria",Turkey,y
+Aegean Sea,Sea,"Ionian Sea, Greece, South Coast Bulgaria, Constantinople, Smyrna, Eastern Mediterranean",Neutral,n
+Ukraine,Land,"Moscow, Sevastopol, Rumania, Galicia, Warsaw",Russia,n
+Warsaw,Land,"Livonia, Moscow, Ukraine, Galicia, Silesia, Prussia",Russia,y
+Greece,Coast,"Ionian Sea, Aegean Sea, South Coast Bulgaria, Serbia, Albania",Neutral,y
+East Coast Bulgaria,Coast,"Rumania, Black Sea, Constantinople, South Coast Bulgaria",Neutral,n
+South Coast Bulgaria,Coast,"Greece, Serbia, Constantinople, Aegean Sea, East Coast Bulgaria",Neutral,y
+Rumania,Coast,"East Coast Bulgaria, Black Sea, Sevastopol, Ukraine, Galicia, Budapest, Serbia",Neutral,y
+Ionian Sea,Sea,"Tunis, Tyrrhenian Sea, Naples, Apulia, Adriatic Sea, Albania, Greece, Aegean Sea, Easter Medditerranean",Neutral,n
+Albania,Coast,"Ionian Sea, Adriatic Sea, Trieste, Serbia, Greece ",Neutral,n
+Serbia,Land,"Budapest, Rumania, South Coast Bulgaria, Greece, Albania, Trieste",Neutral,y
+Budapest,Land,"Galicia, Rumania, Serbia, Trieste, Vienna",Austria,y
+Baltic Sea,Sea,"Sweden, Gulf of Bothnia, Livonia, Prussia, Denmark, Kiel, Berlin",Neutral,n
+Prussia,Coast,"Baltic Sea, Livonia, Warsaw, Silesia, Berlin",Germany,n
+Berlin,Coast,"Baltic Sea, Prussia, Silesia, Munich, Kiel",Germany,y
+Kiel,Coast,"Helgoland Bight, Denmark, Baltic Sea, Berlin, Munich, Ruhr, Holland",Germany,y
+Skagerrak,Sea,"Norway, Sweden, Denmark, North Sea",Neutral,n
+Denmark,Coast,"Skagerrak, North Sea, Helgoland Bight, Kiel, Baltic Sea, Sweden",Neutral,y
+Helgoland Bight,Sea,"Holland, Kiel, Denmark, North Sea",Neutral,n
+Galicia,Land,"Rumania, Ukraine, Warsaw, Silesia, Bohemia, Vienna, Budapest",Austria,n
+Silesia,Land,"Berlin, Prussia, Warsaw, Galicia, Bohemia, Munich",Germany,n
+Bohemia,Land,"Silesia, Munich, Tyrolia, Vienna, Galicia",Austria,n
+Vienna,Land,"Bohemia, Galicia, Budapest, Trieste, Tyrolia",Austria,y
+Trieste,Coast,"Adriatic Sea, Venice, Tyrolia, Vienna, Budapest, Serbia, Albania",Austria,y
+Tyrolia,Land,"Munich, Bohemia, Vienna, Trieste, Venice, Piedmont",Austria,n
+Naples,Coast,"Tyrrhenian Sea, Rome, Apulia, Ionian Sea",Italy,y
+Apulia,Coast,"Adriatic Sea, Venice, Rome, Naples, Ionian Sea",Italy,n
+Adriatic Sea,Sea,"Trieste, Venice, Apulia, Ionian Sea, Albania",Neutral,n
+Venice,Coast,"Tyrolia, Trieste, Adriatic Sea, Apulia, Rome, Tuscanny, Piedmont",Italy,y
+Tuscanny,Coast,"Guld of Lyon, Piedmont, Venice, Rome, Tyrrhenian Sea",Italy,n
+Rome,Coast,"Tuscanny, Venice, Apulia, Naples, Tyrrhenian Sea",Italy,y
+Tyrrhenian Sea,Sea,"Tuscanny, Rome, Naples, Ionian Sea, Tunis, Western Mediterranean, Gulf of Lyon",Neutral,n
+Tunis,Coast,"Ionian Sea, Tyrrhenian Sea, Western Mediterranean, North Africa",Neutral,y
+North Africa,Coast,"Mid-Atlantic Ocean, Western Mediterranean, Tunis",Neutral,n
+Western Mediterranean,Sea,"Tunis, North Africa, Mid-Atlantic Ocean, South Coast Spain, Gulf of Lyon, Tyrrhenian Sea",Neutral,n
+Gulf of Lyon,Sea,"South Coast Spain, Marseilles, Piedmont, Tuscanny, Tyrrhenian Sea, Western Mediterranean",Neutral,n
+South Coast Spain,Coast,"Mid-Atlantic Ocean, Portugal, North Coast Spain, Western Mediterranean, Gulf of Lyon, Marseilles",Neutral,y
+North Coast Spain,Coast,"Portugal, Mid-Atlantic Ocean, Gascony, South Coast Spain",Neutral,n
+Portugal,Coast,"South Coast Spain, North Coast Spain, Mid-Atlantic Ocean",Neutral,y
+Mid-Atlantic Ocean,Sea,"North Atlantic Ocean, Irish Sea, English Channel, Gascony, North Coast Spain, Portugal, South Coast Spain, North Africa, Western Mediterranean, Brest",Neutral,n
+Gascony,Coast,"Brest, Paris, Burgundy, Marseilles, North Coast Spain, Mid-Atlantic Ocean",France,n
+Marseilles,Coast,"Piedmont, Gulf of Lyon, South Coast Spain, Gascony, Burgundy",France,y
+Piedmont,Coast,"Tyrolia, Venice, Tuscanny, Gulf of Lyon, Marseilles",Italy,n
+Burgundy,Land,"Marseilles, Gascony, Paris, Picardy, Belgium, Ruhr, Munich",France,n
+Munich,Land,"Berlin, Silesia, Bohemia, Tyrolia, Burgundy, Ruhr, Kiel",Germany,y
+Ruhr,Land,"Kiel, Munich, Burgundy, Belgium, Holland",Germany,n
+Paris,Land,"Picardy, Burgundy, Gascony, Brest",France,y
+Brest,Coast,"Mid-Atlantic Ocean, English Channel, Picardy, Paris, Gascony",France,y
+Picardy,Coast,"English Channel, Belgium, Burgundy, Paris, Brest",France,n
+Belgium,Coast,"English Channel, North Sea, Holland, Ruhr, Burgundy, Picardy",Neutral,y
+Holland,Coast,"North Sea, Helgoland Bight, Kiel, Ruhr, Belgium",Neutral,y
+English Channel,Sea,"Irish Sea, Mid-Atlantic Ocean, Brest, Picardy, Belgium, North Sea, London, Wales",Neutral,n
+Irish Sea,Sea,"North Atlantic Ocean, Mid-Atlantic Ocean, English Channel, Wales, Liverpool",Neutral,n
+North Sea,Sea,"Norwegian Sea, Norway, Skagerrak, Denmark, Helgoland Bight, Holland, Belgium, English Channel, London, Yorkshire, Edinburgh",Neutral,n
+Clyde,Coast,"North Atlantic Ocean, Norwegian Sea, Edinburgh, Liverpool",England,n
+Edinburgh,Coast,"Clyde, Norwegian Sea, North Sea, Yorkshire, Liverpool",England,y
+Liverpool,Coast,"Clyde, North Atlantic Ocean, Edinburgh, Yorkshire, Wales, Irish Sea",England,y
+Yorkshire,Coast,"Liverpool, Edinburgh, North Sea, London, Wales",England,n
+Wales,Coast,"English Channel, Irish Sea, Liverpool, Yorkshire, London",England,n
+London,Coast,"Yorkshire, North Sea, English Channel, Wales",England,y
