@@ -20,14 +20,14 @@ class Territory:
     supplyCentre = None # boolean flag indicating whether territory is a supply centre or not
     owner = None # the name of the player who owns the territory
     
-    def __init__(self, name, adjacent, subtype, supplyCentre, owner):
+    def __init__(self, name, subtype, adjacent, owner, supplyCentre):
         self.name = name
         
         self.adjacent = [] # need to enforce that these are only from the list of given territories
         for territories in adjacent:
             self.adjacent.append(territories)
         
-        if subtype not in ['land', 'sea', 'coast']: # this doesn't handle if someone inputs multiple or duplicate subtypes
+        if subtype not in ['Land', 'Sea', 'Coast']: # this doesn't handle if someone inputs multiple or duplicate subtypes
             raise subtypeException('a territory must be of the type land, sea or coast')
         else:
             self.subtype = subtype
@@ -44,6 +44,7 @@ class Territory:
     
     def get_name(self):
         return self.name
+
     
     def get_adjacent(self):
         return self.adjacent
